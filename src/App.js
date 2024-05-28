@@ -8,6 +8,10 @@ import axios from 'axios';
 import {APIADD} from './APIADD';
 import toast,{Toaster} from 'react-hot-toast';
 import BatchesForm from './Pages/Acessories/BatchesForm';
+import Classes from './Pages/Acessories/Classes';
+
+
+
 
 
 function App(props) {
@@ -75,6 +79,7 @@ function App(props) {
     <Route path="/Gender" element={<RouteComponent Component={<Gender/>}/>}  />
     <Route path="/Batches" element={<RouteComponent Component={<BatchesForm/>}/>}  />
     <Route path="/Year" element={<RouteComponent Component={<Year getRequest={Get} postRequest={postRequest} />}/>}  />
+    <Route path="/Classes" element={<RouteComponent Component={<Classes getRequest={Get} postRequest={postRequest} />}/>}  />
     </Routes>
     </BrowserRouter>
   );

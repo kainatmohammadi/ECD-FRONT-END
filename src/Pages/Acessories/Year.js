@@ -12,7 +12,7 @@ export default function Year(props) {
 
     return (
         <FormContainer
-            defaultValues={{ year: '' }}
+            defaultValues={{ Year: '' }}
             onSuccess={data => props.postRequest('/Year',data)}
         >
             <CssBaseline />
@@ -34,7 +34,7 @@ export default function Year(props) {
 
                 <Grid item lg={6} xl={6} xs={12} sm={12} md={6}>
                     <Typography style={{ color: 'var(--desc-color)', widht: '100%' }} variant="h5" noWrap>
-                        Please insert the records for the Gender Resource.
+                        Please insert the records for the Year Resource.
                     </Typography>
                     <TextFieldElement
                         sx={{
@@ -56,10 +56,11 @@ export default function Year(props) {
                         }}
                         name="year" label="Please Enter Year Name in here" required 
                         />
+                        
                 </Grid>
 
                 <Grid item lg={6} xl={6} xs={12} sm={12} md={6}>
-
+<br/>
 
                     <Stack sx={{ marginTop: '8%' }} direction="row" spacing={2}>
                         <Button type="submit" variant="outlined" sx={{ fontSize: '22px' }} color="success">
